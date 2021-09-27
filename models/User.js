@@ -5,12 +5,6 @@ const UserSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  age: {
-    type: String,
-  },
-  place: {
-    type: String,
-  },
   email: {
     type: String,
     required: true,
@@ -20,7 +14,16 @@ const UserSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  data: {
+  phone: {
+    type: String,
+  },
+  age:{
+    type:String
+  },
+  place: {
+    type: String,
+  },
+  date: {
     type: Date,
     default: Date.now,
   },
